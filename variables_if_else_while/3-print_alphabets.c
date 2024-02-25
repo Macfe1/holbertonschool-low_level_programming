@@ -20,7 +20,6 @@ for (letra = 'A'; letra <= 'Z'; letra++)
 putchar(letra);
 }
 
-putchar(' ');
 putchar('\n');
 
 return (0);
