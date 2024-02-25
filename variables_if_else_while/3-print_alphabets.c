@@ -1,28 +1,24 @@
 #include <stdio.h>
 
 /**
-*main - principal function
-*
-*Return: 0 if the 0 is teh answer success
-*/
+ * main - principal function
+ *
+ * Return: 0 if the program is successful
+ */
 
 int main(void)
 {
 char low = 'a';
-char up = 'A';
 
+while (low <= 'z' || low <= 'Z')
 {
 putchar(low);
+if (low == 'z')
+{
+low = 'A';
+}
 low++;
 }
-while (low <= 'z')
-{
-putchar(up);
-up++;
-}
-while (up <= 'Z')
-
 putchar('\n');
-
 return (0);
 }
