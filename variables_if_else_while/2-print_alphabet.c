@@ -14,6 +14,6 @@ while (alf <= abeto)
 putchar(alf);
 alf++;
 }
- putchar ('\n')
+putchar ('\n');
 return (0);
 }
