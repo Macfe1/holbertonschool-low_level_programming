@@ -23,6 +23,5 @@ if (letra != 'Z')
 putchar(' ');
 }
 }
-putchar('\n');
 return (0);
 }
