@@ -1,38 +1,18 @@
 #include <stdio.h>
-
 /**
-* main - principal function
+*main - principal function
 *
-* Return: 0 if the 0 is teh answer success
-*
+*Return: 0 if the 0 is the  answer then  success
 */
 int main(void)
 {
-putchar('a');
-putchar('b');
-putchar('c');
-putchar('d');
-putchar('e');
-putchar('f');
-putchar('g');
-putchar('h');
-putchar('i');
-putchar('j');
-putchar('k');
-putchar('l');
-putchar('m');
-putchar('n');
-putchar('o');
-putchar('p');
-putchar('q');
-putchar('r');
-putchar('s');
-putchar('t');
-putchar('u');
-putchar('v');
-putchar('w');
-putchar('x');
-putchar('y');
-putchar('z');
+char alf = 'a';
+char abeto = 'z';
+
+while (alf <= abeto)
+{
+putchar(alf);
+alf++;
+}
 return (0);
 }
