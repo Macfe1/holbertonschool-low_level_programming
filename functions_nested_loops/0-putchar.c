@@ -3,10 +3,10 @@
 * main - principal function to print _putchar
 *
 * Return: 0 if the function is zero then success
-*/
+  */
 
-int main (void)
+int main(void)
 {
-  putchar ('_putchar');
+  putchar (_putchar);
   return (0);
 }	
