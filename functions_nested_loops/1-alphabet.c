@@ -1,10 +1,12 @@
 #include "main.h"
-/**
- * main - principal function to print the aphabet in lowercase
- *
- * Return: 0 then success
- */
 
+/**
+ * print_alphabet - Print the alphabet in lowercase
+ *
+ * Description: This function prints the lowercase alphabet using _putchar.
+ *
+ * Return: void
+ */
 void print_alphabet(void)
 
 {
