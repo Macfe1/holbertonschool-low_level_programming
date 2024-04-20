@@ -18,6 +18,7 @@ void print_to_98(int n)
 	{
 		printf(", ");
 		print_to_98((n < target) ? ++n : --n);
+		return;
 	}
 	if (n == target)
 	{
