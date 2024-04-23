@@ -6,4 +6,4 @@ CC = gcc
 SRC = ~/holbertonschool-low_level_programming/makefiles
 
 school: $(SRC)/main.c $(SRC)/school.c
-	gcc -o school $(SRC)/main.c $(SRC)/school.c
+	$(CC) -o school $(SRC)/main.c $(SRC)/school.c
