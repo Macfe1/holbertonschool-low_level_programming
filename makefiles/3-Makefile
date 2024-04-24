@@ -8,10 +8,10 @@ NAME = school
 
 RM = rm -f
 
-all = $(NAME)
-
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
+
+all = $(NAME)
 
 clean: 
 	$(RM) *~ $(NAME)
