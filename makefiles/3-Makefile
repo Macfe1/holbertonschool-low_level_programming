@@ -8,6 +8,8 @@ NAME = school
 
 RM = rm -f
 
+all = $(NAME)
+
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
@@ -20,4 +22,3 @@ fclean: clean oclean
 
 re = fclean all
 
-all = $(NAME)
