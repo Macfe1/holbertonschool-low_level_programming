@@ -10,13 +10,13 @@ void print_line(int n)
 {
 	int inx;
 
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+
 	for (inx = 0; inx <= n; inx++)
 	{
-		if (n <= 0)
-		{
-			_putchar('\n');
-		}
-
 		_putchar('_');
 	}
 
