@@ -33,7 +33,7 @@ int main(void)
 		else
 
 		{
-			printf("%d ", index);
+			printf("%d", index);
 		}
 
 		if (index < 100)
@@ -42,8 +42,6 @@ int main(void)
 			printf(" ");
 		}
 	}
-
-	printf("\n");
 
 	return (0);
 }
