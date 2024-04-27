@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - to print numbers from 1 to 100 except for multiples of three and 5.
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int index;
