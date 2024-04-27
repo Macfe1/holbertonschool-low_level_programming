@@ -13,20 +13,23 @@ int main(void)
 			printf("FizzBuzz ");
 		}
 
-		if (index % 3 == 0)
+		else if (index % 3 == 0)
 
 		{
 			printf("Fizz ");
 		}
 
-		if (index % 5 == 0)
+		else if (index % 5 == 0)
 
 		{
 			printf("Buzz ");
 		}
 
-		printf("%d ", index);
+		else
 
+		{
+			printf("%d ", index);
+		}
 	}
 
 	return (0);
