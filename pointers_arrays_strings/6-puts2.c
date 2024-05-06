@@ -22,4 +22,6 @@ void puts2(char *str)
 		cont++;
 		caract++;
 	}
+
+	_putchar ('\n');
 }
