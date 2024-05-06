@@ -9,25 +9,25 @@
  */
 void rev_string(char *s)
 {
-	int longi = 0;
-	int i;
+	char *str_1 = s;
+	char *str_2 = s;
 
-	while (*s != '0')
+	while (*str_1 != '\0')
 
 	{
-		longi++;
-		*s++;
+		str_1++;
 	}
 
-	*s -= longi;
+	str_1--;
 
-	for (i = 0; i < longi / 2; i++)
+	while (str_2 < str_1)
 	{
-		char tempo = *s[i];
+		char tempo = *str_1;
 
-		*s[i] = *s[longi - i - 1];
-		*s[longi - i - 1] = tempo;
+		*str_1 = *str_2;
+		*str_2 = tempo;
+
+		str_2++;
+		str_1--;
 	}
-
-
 }
