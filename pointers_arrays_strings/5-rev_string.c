@@ -16,17 +16,17 @@ void rev_string(char *s)
 
 	{
 		longi++;
-		s++;
+		*s++;
 	}
 
-	s -= longi;
+	*s -= longi;
 
 	for (i = 0; i < longi / 2; i++)
 	{
-		char tempo = s[i];
+		char tempo = *s[i];
 
-		s[i] = s[longi - i - 1];
-		s[longi - i - 1] = tempo;
+		*s[i] = *s[longi - i - 1];
+		*s[longi - i - 1] = tempo;
 	}
 
 
