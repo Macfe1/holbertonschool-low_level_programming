@@ -4,7 +4,7 @@
  * print_rev - function
  *
  * @s: pointer
- *
+*
  * Return: void
  */
 void print_rev(char *s)
