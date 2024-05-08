@@ -53,7 +53,7 @@ int _atoi(char *s)
 
 		if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
 		{
-			break;
+			continue;
 		}
 	}
 
