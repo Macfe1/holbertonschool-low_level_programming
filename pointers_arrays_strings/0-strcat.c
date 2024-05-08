@@ -9,15 +9,15 @@
  */
 int _strlen(char *s)
 {
-        int longitd = 0;
+	int longitd = 0;
 
-        while (*s != '\0')
-        {
-                longitd++;
-                s++;
-        }
+	while (*s != '\0')
+	{
+		longitd++;
+		s++;
+	}
 
-        return (longitd);
+	return (longitd);
 }
 
 /**
@@ -42,6 +42,6 @@ char *_strcat(char *dest, char *src)
 
 	dest[i + j] = '\0';
 
-	return dest;
+	return (dest);
 }
 
