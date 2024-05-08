@@ -31,7 +31,7 @@ int _atoi(char *s)
 {
 	int i = 0;
 	int lenght = _strlen(s);
-	int temp = 0;
+	unsigned int temp = 0;
 	int signal  = 1;
 
 	for (i = 0; i < lenght; i++)
