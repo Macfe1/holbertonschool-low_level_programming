@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * aux_recur - funcion para encontrar la raiz cuadrada de 
+ * aux_recur - funcion para encontrar la raiz cuadrada de n
  *
  * @n: numero al que le hayamos la raiz
  * @root: raiz cuadrada de n
@@ -17,10 +17,10 @@ int aux_recur(int n, int root)
 
 	if (root * root > n)
 	{
-		return(-1);
+		return (-1);
 	}
 
-	return (aux_recur (n, root + 1));
+	return (aux_recur(n, root + 1));
 }
 
 /**
@@ -32,15 +32,14 @@ int aux_recur(int n, int root)
  */
 int _sqrt_recursion(int n)
 {
-        if (n < 0)
-        return (-1);
+	if (n < 0)
+		return (-1);
 
-        if (n == 0)
-        return (0);
+	if (n == 0)
+		return (0);
 
-        if (n == 1)
-        return (1);
+	if (n == 1)
+		return (1);
 
-        return (aux_recur(n, 1));
-
+	return (aux_recur(n, 1));
 }
