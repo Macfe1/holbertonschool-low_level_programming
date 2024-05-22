@@ -15,7 +15,8 @@ int main(__attribute__((unused)) int argc, char *argv[])
 
 	while (argv[i] != NULL)
 	{
-		printf("%s\n", *argv);
+		printf("%s\n", argv[i]);
+
 		i += 1;
 	}
 	return (0);
