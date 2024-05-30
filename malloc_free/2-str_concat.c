@@ -35,9 +35,14 @@ char *str_concat(char *s1, char *s2)
 	int longi_1 = 0, longi_2 = 0, longi_3 = 0;
 	int i = 0, j = 0;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (" ");
+		s1 = "";
+	}
+
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 
 	longi_1 = _strlen(s1);
@@ -63,6 +68,8 @@ char *str_concat(char *s1, char *s2)
 		new_a[i] = s2[j];
 		i++;
 	}
+
+	new_a[i] = '\0';
 
 	return (new_a);
 }
