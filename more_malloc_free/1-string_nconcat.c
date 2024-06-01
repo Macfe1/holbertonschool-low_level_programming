@@ -45,9 +45,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	len_s1 = _strlen(s1);
 	len_s2 = _strlen(s2);
-	sum_all = len_s1 + (n > len_s2 ? len_s2 : n) + 1;
+	sum_all = len_s1 + (n > len_s2 ? len_s2 : n);
 
-	new_array = (char *) malloc(sum_all * sizeof(char));
+	new_array = (char *) malloc((sum_all + 1) * sizeof(char));
 
 	if (new_array == NULL)
 	{
@@ -63,6 +63,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		new_array[len_s1 + i] = s2[i];
 	}
+
+	new_array[sum_all] = '\0';
 
 	return (new_array);
 }
