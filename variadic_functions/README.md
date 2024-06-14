@@ -1,8 +1,8 @@
- ![Project badge](https://intranet.hbtn.io/assets/pathway/004_color-d2fbcfb42ba7481834896ecc89a6f0ae65762b3c1096691dd0f820f7f29e3389.png) 
+![Project badge](https://intranet.hbtn.io/assets/pathway/004_color-d2fbcfb42ba7481834896ecc89a6f0ae65762b3c1096691dd0f820f7f29e3389.png) 
 # C - Variadic functions
 ## Details
 Master By: Julien Barbier Weight: 1 Migrated to checker v2: Your score will be updated as you progress.## Resources
-Read or watch :
+Read or watch:
 * [stdarg.h](https://intranet.hbtn.io/rltoken/gyP9q81fzXR7FIeHScaKyw) 
 
 * [Variadic Functions](https://intranet.hbtn.io/rltoken/PY9dOZHn7a5M9suR-0j1yQ) 
