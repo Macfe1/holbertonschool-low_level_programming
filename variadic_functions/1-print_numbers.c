@@ -20,7 +20,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		separator = "";
 
 	if (n == 0)
+	{
+		printf("\n");
 		return;
+	}
 
 	va_start(print_num, n);
 
