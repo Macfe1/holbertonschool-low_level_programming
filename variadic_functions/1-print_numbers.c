@@ -19,6 +19,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	if (separator == NULL)
 		separator = "";
 
+	if (n == 0)
+		return;
+
 	va_start(print_num, n);
 
 	num = va_arg(print_num, unsigned int);
