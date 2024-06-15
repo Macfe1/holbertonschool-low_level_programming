@@ -5,7 +5,7 @@
 /**
  * print_numbers - function to print numbers with the separator
  *
- * @separator: Separator after the number 
+ * @separator: separator after the number
  * @n: number of parameters to show
  *
  * Return: the n numbers with its separator
@@ -15,7 +15,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i = 0, num;
 
 	va_list print_num;
-	
+
 	if (separator == NULL)
 		separator = "";
 
@@ -37,5 +37,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_end(print_num);
 
-	printf ("\n");
+	printf("\n");
 }
