@@ -26,29 +26,31 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		printf("\n");
 		return;
 	}
-
 	va_start(print_string, n);
-
 	next_strings = va_arg(print_string, char*);
 
 	for (i = 0; i < n - 1; i++, next_strings = va_arg(print_string, char*))
 	{
 		if (next_strings == NULL)
-		{
 			printf("(nil)%s", separator);
-		}
 
-		printf("%s%s", next_strings, separator);
+		else if (next_strings[0] == '\0')
+			printf("\"\"%s", separator);
+		else
+			printf("%s%s", next_strings, separator);
 	}
+
+	next_strings = va_arg(print_string, char*);
 
 	if (next_strings == NULL)
-	{
 		printf("(nil)");
-	}
 
-	printf("%s", next_strings);
+	else if (next_strings[0] == '\0')
+		printf("\"\"");
+
+	else
+		printf("%s", next_strings);
 
 	va_end(print_string);
-
 	printf("\n");
 }
