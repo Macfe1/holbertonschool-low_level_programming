@@ -36,7 +36,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("(nil)%s", separator);
 
 		else if (next_strings[0] == '\0')
-			printf("\"\"%s", separator);
+			printf("%s", separator);
 		else
 			printf("%s%s", next_strings, separator);
 	}
