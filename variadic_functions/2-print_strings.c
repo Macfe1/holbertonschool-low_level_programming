@@ -26,6 +26,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		printf("\n");
 		return;
 	}
+
 	va_start(print_string, n);
 	next_strings = va_arg(print_string, char*);
 
@@ -39,8 +40,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		else
 			printf("%s%s", next_strings, separator);
 	}
-
-	next_strings = va_arg(print_string, char*);
 
 	if (next_strings == NULL)
 		printf("(nil)");
