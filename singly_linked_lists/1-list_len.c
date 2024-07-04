@@ -15,7 +15,7 @@ size_t list_len(const list_t *h)
 
 	if (iterator == NULL)
 	{
-		return (-1);
+		return (0);
 	}
 
 	while (iterator != NULL)
