@@ -1,0 +1,167 @@
+# Ignorar archivos en ../argc_argv
+../argc_argv/add
+../argc_argv/args
+../argc_argv/mul
+../argc_argv/nargs
+
+# Ignorar archivos en ../bit_manipulation
+../bit_manipulation/0-main.c
+../bit_manipulation/1-main.c
+../bit_manipulation/1p.c
+../bit_manipulation/2-main.c
+../bit_manipulation/3-main.c
+../bit_manipulation/4-main.c
+../bit_manipulation/5-main.c
+../bit_manipulation/a
+../bit_manipulation/b
+../bit_manipulation/c
+../bit_manipulation/d
+../bit_manipulation/e
+../bit_manipulation/f
+
+# Ignorar archivos en ../doubly_linked_lists
+../doubly_linked_lists/0-main.c
+../doubly_linked_lists/1-main.c
+../doubly_linked_lists/2-main.c
+../doubly_linked_lists/3-main.c
+../doubly_linked_lists/4-main.c
+../doubly_linked_lists/5-main.c
+../doubly_linked_lists/6-main.c
+../doubly_linked_lists/7-main.c
+../doubly_linked_lists/8-main.c
+../doubly_linked_lists/a
+../doubly_linked_lists/b
+../doubly_linked_lists/c
+../doubly_linked_lists/d
+../doubly_linked_lists/e
+../doubly_linked_lists/h
+../doubly_linked_lists/i
+../doubly_linked_lists/j
+../doubly_linked_lists/k
+
+# Ignorar archivo cp en la carpeta actual
+cp
+
+# Ignorar archivos en ../function_pointers
+../function_pointers/0-main.c
+../function_pointers/1-main.c
+../function_pointers/2-main.c
+../function_pointers/a
+../function_pointers/b
+../function_pointers/c
+../function_pointers/calc
+
+# Ignorar archivos en ../functions_nested_loops
+../functions_nested_loops/1-main.c
+../functions_nested_loops/10-add
+../functions_nested_loops/10-main.c
+../functions_nested_loops/11-main.c
+../functions_nested_loops/2-main.c
+../functions_nested_loops/3-islower
+../functions_nested_loops/3-main.c
+../functions_nested_loops/4-isalpha
+../functions_nested_loops/4-main.c
+../functions_nested_loops/5-main.c
+../functions_nested_loops/5-sign
+../functions_nested_loops/6-abs
+../functions_nested_loops/6-main.c
+../functions_nested_loops/7-last_digit
+../functions_nested_loops/7-main.c
+../functions_nested_loops/8-24
+../functions_nested_loops/8-main.c
+../functions_nested_loops/9-main.c
+../functions_nested_loops/9-times_table
+../functions_nested_loops/_putchar.c
+
+# Ignorar archivo en ../hello_world
+../hello_world/macfetrying
+
+# Ignorar archivos en ../malloc_free
+../malloc_free/0-main.c
+../malloc_free/1-main.c
+../malloc_free/2-main.c
+../malloc_free/2-str_concat
+../malloc_free/3-alloc_grid
+../malloc_free/3-main.c
+../malloc_free/4-free_grid
+../malloc_free/4-main.c
+../malloc_free/a
+../malloc_free/s
+
+# Ignorar archivos en ../more_malloc_free
+../more_malloc_free/0-main.c
+../more_malloc_free/1-main.c
+../more_malloc_free/1-string_nconcat
+../more_malloc_free/2-callocc
+../more_malloc_free/2-main.c
+../more_malloc_free/3-array_range
+../more_malloc_free/3-main.c
+../more_malloc_free/a
+../more_malloc_free/echo
+
+# Ignorar archivos en ../pointers_arrays_strings
+../pointers_arrays_strings/3-strspn
+../pointers_arrays_strings/4-strpbrk
+../pointers_arrays_strings/5-strstr
+../pointers_arrays_strings/7-main_2.c
+../pointers_arrays_strings/7-print_chessboard
+../pointers_arrays_strings/8-main_2.c
+../pointers_arrays_strings/8-print_diagsums
+
+# Ignorar archivos en ../preprocessor
+../preprocessor/0-main.c
+../preprocessor/1-main.c
+../preprocessor/3-main.c
+../preprocessor/4-main.c
+../preprocessor/a
+../preprocessor/b
+../preprocessor/c
+../preprocessor/d
+../preprocessor/e
+
+# Ignorar archivos en ../recursion
+../recursion/0-main.c
+../recursion/1-main.c
+../recursion/1-print_rev_recursion
+../recursion/2-main.c
+../recursion/2-strlen_recursion
+../recursion/3-factorial
+../recursion/3-main.c
+../recursion/4-main.c
+../recursion/4-pow
+../recursion/5-main.c
+../recursion/5-sqrt
+../recursion/6-main.c
+../recursion/6-prime
+../recursion/_putchar.c
+
+# Ignorar archivos en ../singly_linked_lists
+../singly_linked_lists/0-main.c
+../singly_linked_lists/1-main.c
+../singly_linked_lists/2-main.c
+../singly_linked_lists/3-main.c
+../singly_linked_lists/4-main.c
+../singly_linked_lists/_putchar.c
+../singly_linked_lists/a
+../singly_linked_lists/b
+../singly_linked_lists/c
+../singly_linked_lists/d
+../singly_linked_lists/e
+
+# Ignorar archivos en ../structures_typedef
+../structures_typedef/4-main.c
+../structures_typedef/5-main.c
+../structures_typedef/e
+../structures_typedef/f
+
+# Ignorar archivos en ../variadic_functions
+../variadic_functions/0-main.c
+../variadic_functions/1-main.c
+../variadic_functions/2-main.c
+../variadic_functions/3-main.c
+../variadic_functions/a
+../variadic_functions/a.out
+../variadic_functions/b
+../variadic_functions/c
+../variadic_functions/d
+
