@@ -39,26 +39,6 @@ int function_close(int fd)
 }
 
 /**
- * function_fchmod - change permissions to the open files
- *
- * @fd_second: second file descriptor, we are creating
- * @mode: permissions
- *
- * Return: 0 if success
- */
-int function_fchmod(int fd_second, mode_t mode)
-{
-	if (fchmod(fd_second, mode) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't set permissions");
-		close(fd_second);
-		exit(99);
-	}
-
-	return (0);
-}
-
-/**
  * main - write a program that copies the content of a file to another file.
  *
  * @argc: number of parameters
@@ -85,7 +65,6 @@ int main(int argc, char *argv[])
 		close(fd);
 		exit(99);
 	}
-	function_fchmod(fd_second, 0664);
 	while ((bytes_read = read(fd, buffer, 1024)) > 0)
 	{
 		bytes_written = write(fd_second, buffer, bytes_read);
