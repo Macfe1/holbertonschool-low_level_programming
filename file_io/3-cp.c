@@ -61,7 +61,8 @@ int main(int argc, char *argv[])
 	fd_second = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	if (fd_second == -1)
 	{
-		dprintf(2, "Error: Can't write to %s\n", argv[2]);
+		dprintf(2, "Error: Can't write to to create to %s\n", argv[2]);
+		close(fd);
 		exit(99);
 	}
 	while ((bytes_read = read(fd, buffer, 1024)) > 0)
