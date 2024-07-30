@@ -62,7 +62,6 @@ int main(int argc, char *argv[])
 	if (fd_second == -1)
 	{
 		dprintf(2, "Error: Can't write to %s\n", argv[2]);
-		close(fd);
 		exit(99);
 	}
 	while ((bytes_read = read(fd, buffer, 1024)) > 0)
