@@ -54,15 +54,14 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	fd = function_open(argv[1], O_RDONLY);
 	fd_second = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_second == -1)
 	{
-		dprintf(2, "Error: Can't write to %s\n", argv[2]);
-		function_close(fd);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 	while ((bytes_read = read(fd, buffer, 1024)) > 0)
@@ -72,13 +71,13 @@ int main(int argc, char *argv[])
 		{
 			function_close(fd);
 			function_close(fd_second);
-			dprintf(2, "Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
 	}
 	if (bytes_read == -1)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		function_close(fd);
 		function_close(fd_second);
 		exit(98);
