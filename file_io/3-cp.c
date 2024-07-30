@@ -58,11 +58,11 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	fd = function_open(argv[1], O_RDONLY);
-	fd_second = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
+	fd_second = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_second == -1)
 	{
 		dprintf(2, "Error: Can't write to %s\n", argv[2]);
-		close(fd);
+		function_close(fd);
 		exit(99);
 	}
 	while ((bytes_read = read(fd, buffer, 1024)) > 0)
@@ -70,8 +70,8 @@ int main(int argc, char *argv[])
 		bytes_written = write(fd_second, buffer, bytes_read);
 		if (bytes_written == -1 || bytes_written != bytes_read)
 		{
-			close(fd);
-			close(fd_second);
+			function_close(fd);
+			function_close(fd_second);
 			dprintf(2, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
@@ -79,12 +79,10 @@ int main(int argc, char *argv[])
 	if (bytes_read == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
-		close(fd);
-		close(fd_second);
+		function_close(fd);
+		function_close(fd_second);
 		exit(98);
 	}
-	close(fd);
-	close(fd_second);
 	function_close(fd_second);
 	function_close(fd);
 	return (0);
