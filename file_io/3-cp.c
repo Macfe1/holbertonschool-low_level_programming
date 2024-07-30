@@ -48,7 +48,7 @@ int function_close(int fd)
  */
 int main(int argc, char *argv[])
 {
-	int fd, fd_second, close;
+	int fd, fd_second;
 	char buffer[1024];
 	ssize_t bytes_read = 0, bytes_written = 0;
 
@@ -83,7 +83,8 @@ int main(int argc, char *argv[])
 		close(fd_second);
 		exit(98);
 	}
-	close (fd);
+	
+	close(fd);
 	close(fd_second);
 	function_close(fd_second);
 	function_close(fd);
