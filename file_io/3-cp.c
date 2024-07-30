@@ -83,7 +83,6 @@ int main(int argc, char *argv[])
 		close(fd_second);
 		exit(98);
 	}
-	
 	close(fd);
 	close(fd_second);
 	function_close(fd_second);
