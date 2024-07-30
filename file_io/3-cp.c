@@ -1,6 +1,64 @@
 #include "main.h"
 
 /**
+ * function_open - To open a fd
+ *
+ * @argv: to provide the path
+ * @flags: permisions at the time to open
+ *
+ * Return: the file descriptor or exit if fail
+ */
+int function_open(char *argv, int flags)
+{
+	int fd = open(argv, flags);
+
+	if (fd == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv);
+		exit(98);
+	}
+
+	return (fd);
+}
+
+/**
+ * function_close - To close the file descriptions
+ *
+ * @fd: second file descriptor, we are creating
+ *
+ * Return: 0 success
+ */
+int function_close(int fd)
+{
+	if (close(fd) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		exit(100);
+	}
+	return (0);
+}
+
+/**
+ * function_fchmod - change permissions to the open files
+ *
+ * @fd_second: second file descriptor, we are creating
+ * @mode: permissions
+ *
+ * Return: 0 if success
+ */
+int function_fchmod(int fd_second, mode_t mode)
+{
+	if (fchmod(fd_second, mode) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't set permissions");
+		close(fd_second);
+		exit(99);
+	}
+
+	return (0);
+}
+
+/**
  * main - write a program that copies the content of a file to another file.
  *
  * @argc: number of parameters
