@@ -1,4 +1,3 @@
-![Project badge](https://intranet.hbtn.io/assets/pathway/004_color-d2fbcfb42ba7481834896ecc89a6f0ae65762b3c1096691dd0f820f7f29e3389.png) 
 # C - Hash tables
 ## Details
 Amateur By: Julien Barbier Weight: 1 Migrated to checker v2: Your score will be updated as you progress.## Resources
