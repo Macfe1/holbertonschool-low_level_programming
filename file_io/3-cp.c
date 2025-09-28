@@ -59,9 +59,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	fd = function_open(argv[1], O_RDONLY);
-	old_umask = umask(0);
 	fd_second = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	umask(old_umask);
 	if (fd_second == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
